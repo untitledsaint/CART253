@@ -13,8 +13,8 @@
  * Create a canvas, hides the cursor
 */
 function setup() {
-    // A 640x480 canvas
-    createCanvas(640, 640);
+    // A 1080x1080 canvas
+    createCanvas(1080, 1080);
 
     // Don't show the cursor
     noCursor();
@@ -26,7 +26,7 @@ function setup() {
 */
 function draw() {
     // Make the background black (specified as RGB)
-    background(333, 111, 111);
+    background(255, 0, 0);
 
     // Draw a pyramid
     // How many levels for the pyramid
@@ -58,8 +58,8 @@ function draw() {
     // No line around the shape
     noStroke();
     // Make it red (RGB)
-    fill(0, 0, 255);
+    fill(255, 200, 30);
     // Draw a 100x100 circle at the mouse position
-    ellipse(mouseX, mouseY, 100, 100);
+    ellipse(mouseX, mouseY, 25, 25);
     pop();
 }
