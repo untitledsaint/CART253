@@ -1,9 +1,9 @@
 /**
  * Title of Project
- * antonyhatem
+ * Author Name
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * This project is a prototype for the instructions assignment
+ * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 
 "use strict";
