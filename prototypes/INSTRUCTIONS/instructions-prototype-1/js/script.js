@@ -31,6 +31,7 @@ function draw() {
 }
 
 function drawCandle() {
+  stroke(0)
   push();
   fill(252, 245, 187);
   rect(300, 300, 300, 500);
@@ -38,23 +39,25 @@ function drawCandle() {
 }
 
 function drawFlamebase() {
+
+  noStroke()
   push();
   fill(255, 150, 51);
-  ellipse(450, 225, 80,150);
+  ellipse(450, 225, 80, 150);
   pop();
 }
 
 function drawFlametip() {
   push();
   fill(255, 255, 0);
-  triangle(475, 220, 425, 300, 475, 300);
+  ellipse(450, 250, 50, 100);;
   pop();
 }
 
 function drawString() {
   push();
   stroke(0);
-  strokeWeight(2);
-  line(450, 0, 450, 250);
+  strokeWeight(8);
+  line(450, 297, 450, 250);
   pop();
 }
