@@ -5,7 +5,7 @@
 
 welcome welcome, here you will find any prototypes, projects and experiments that fall under CART 253 taught by [Pippin Barr](https://pippinbarr.com)
 
-### enjoy the stay. ✿
+### ✿ enjoy the stay ✿
 
 ## USEFUL PATHS
 - [Topics //WORK IN PROGRESS](topics.md)

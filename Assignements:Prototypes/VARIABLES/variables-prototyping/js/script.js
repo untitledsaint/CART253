@@ -1,24 +1,49 @@
 /**
- * Title of Project
- * Author Name
+ * Rebecca's rocket (temp)
+ * antonyhatem
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * purple rocket launching downwards by following pippin's 
+ * mini tutorial in class
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+ * making a rocket launch downward
+ */
+const rocket = {
+    x:50, 
+    y:0,
+    width:50,
+    height:100,
+    speed: 3,
+    acceleration: 0.5
+}
+
+/**
+ * Making a canvas
+ */
 function setup() {
+createCanvas(100, 800);
 
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+ * Making rocket launch downward with acceleration
+ */
 function draw() {
+    background("skyblue");
 
+rocket.y += rocket.speed;
+rocket.speed += rocket.acceleration;
+/**
+ * Drawing the rocket
+ */
+    push();
+rectMode(CENTER);
+noStroke();
+fill("rebeccapurple");
+square(rocket.x, rocket.y + rocket.height * 0.5, rocket.width);
+pop();
 }

@@ -7,5 +7,6 @@
 
 ![image](/images/website_screenshot.png)
 
-## september XX 2026
-// ...
+## september 24 2026
+// second entry in the journal. For someone who never coded much other than HTML, i learned a decent amount
+after using P5.js. its a nice little way to use javascript in order to make interesting and unique visuals that only your imagination that can limit you. what i found surprsing is how intuitive and easily understandible everything is. What I found the most bothersome for me is the time consumption and all the different references. it took me more time than i thought and I had other things that stacked up and caught me off guard as well as the skill gap of learning all the different ways to add elements and functions. 
