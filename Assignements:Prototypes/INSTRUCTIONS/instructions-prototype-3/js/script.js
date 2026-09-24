@@ -15,7 +15,6 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(220);
-  strokeWeight(5);
 }
 
 
@@ -31,12 +30,14 @@ function draw() {
   drawLine3();
   drawLine4();
   drawLine5();
-  drawLine6();
   drawWeirdShape();
   drawWeirdShape2();
   drawWeirdShape3();
   drawWeirdShape4();
   drawWeirdShape5();
+
+noStroke();
+
 
 }
 
@@ -51,7 +52,7 @@ function drawLine2() {
 
 function drawLine3() {
   stroke(255, 0, 0);
-  strokeWeight(100);
+  strokeWeight(10);
   line(width / 2, 0, width / 2, height);
 }
 
@@ -62,12 +63,6 @@ function drawLine4() {
 function drawLine5() {
   stroke(255);
   line(0, height, width, height);
-}
-
-function drawLine6() {
-  stroke(255, 0, 255);
-  strokeWeight(100);
-  line(width, 0, width, height);
 }
 
 function drawWeirdShape() {
