@@ -32,22 +32,22 @@ function draw() {
 
 function drawCandle() {
   push();
-  fill(255);
-  rect(300, 300, 300, 300);
+  fill(252, 245, 187);
+  rect(300, 300, 300, 500);
   pop();
 }
 
 function drawFlamebase() {
   push();
-  fill(255, 0, 0);
-  ellipse(450, 300, 150, 50);
+  fill(255, 150, 51);
+  ellipse(450, 225, 80,150);
   pop();
 }
 
 function drawFlametip() {
   push();
   fill(255, 255, 0);
-  triangle(450, 250, 425, 300, 475, 300);
+  triangle(475, 220, 425, 300, 475, 300);
   pop();
 }
 
