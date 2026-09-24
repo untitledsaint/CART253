@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# Instructions p5.js prototype 1
 
-AUTHOR NAME
+ANTONY HATEM
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
