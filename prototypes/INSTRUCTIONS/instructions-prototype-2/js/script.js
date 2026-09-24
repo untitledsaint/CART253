@@ -23,7 +23,7 @@ function setup() {
  * Giving background some color.
 */
 function draw() {
-  background(102, 0, 207);
+  background(0, 0, 0);
 
   drawSquare1();
   drawSquare2();
@@ -39,47 +39,47 @@ function draw() {
 function drawSquare1() {
   push();
   fill(255, 0, 0);
-  rect(500, 300, 100, 100);
+  rect(500, -200, 100, 600);
   pop();
 }
 
 function drawSquare2() {
   push();
   fill(255, 255, 255);
-  rect(0, 300, 100, 100);
+  rect(0, -200, 100, 600);
   pop();
 }
 
 function drawSquare3() {
   push();
   fill(255, 255, 0);
-  rect(100, 300, 100, 100);
+  rect(100, -200, 100, 600);
   pop();
 }
 
 function drawSquare4() {
   push();
   fill(0, 255, 255);
-  rect(200, 300, 100, 100);
+  rect(200, -200, 100, 600);
   pop();
 }
 
 function drawSquare5() {
   push();
   fill(0, 255, 0);
-  rect(300, 300, 100, 100);
+  rect(300, -200, 100, 600);
   pop();
 }
 
 function drawSquare6() {
   push();
   fill(255, 0, 255);
-  rect(400, 300, 100, 100);
+  rect(400, -200, 100, 600);
   pop();
 }
 function drawSquare7() {
   push();
   fill(0, 0, 250);
-  rect(600, 300, 100, 100);
+  rect(600, -200, 100, 600);
   pop();
 }
