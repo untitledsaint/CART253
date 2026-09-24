@@ -9,13 +9,14 @@
 "use strict";
 
 /**
- * Making the background/Canvas that stretches 
- * to the full window for immersion.
+ * Making the canvas rectangular to make it so that it looks
+ * like a TV screen
 */
 function setup() {
   createCanvas(700, 600);
   background(250, 0, 127);
   noStroke();
+  
 }
 
 
@@ -32,10 +33,17 @@ function draw() {
   drawSquare5();
   drawSquare6();
   drawSquare7();
+  drawRectangle1();
+  drawRectangle2();
+  drawRectangle3();
+  drawRectangle4();
+  
+
 
 
 }
 
+  
 function drawSquare1() {
   push();
   fill(255, 0, 0);
@@ -83,3 +91,30 @@ function drawSquare7() {
   rect(600, -200, 100, 600);
   pop();
 }
+function drawRectangle1() {
+  push();
+  fill(0, 0, 255);
+  rect(0, 400, 100, 40);
+  pop();
+}
+function drawRectangle2() {
+  push();
+  fill(255, 0, 255);
+  rect(200, 400, 100, 40);
+  pop();
+}
+
+function drawRectangle3() {
+  push();
+  fill(0, 255, 255);
+  rect(400, 400, 100, 40);
+  pop();
+}
+function drawRectangle4() {
+  push();
+  fill(255, 255, 255);
+  rect(600, 400, 100, 40);
+  pop();
+}
+
+
