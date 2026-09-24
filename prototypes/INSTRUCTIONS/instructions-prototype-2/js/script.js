@@ -36,28 +36,28 @@ function draw() {
 
 function drawSquare1() {
   push();
-  fill(255, 0, 0);
-  rect(50, 50, 100, 100);
+  fill(51, 255, 20);
+  rect(80, 80, 450, 450);
   pop();
 }
 
 function drawSquare2() {
   push();
-  fill(0, 255, 0);
-  rect(200, 50, 100, 100);
+  fill(255, 65, 0);
+  rect(150, 150, 300, 300);
   pop();
 }
 
 function drawSquare3() {
   push();
   fill(0, 0, 255);
-  rect(350, 50, 100, 100);
+  rect(250, 250, 100, 100);
   pop();
 }
 
 function drawCircle1() {
   push();
-  fill(255, 255, 0);
+  fill(255, 255, 22);
   ellipse(100, 300, 100, 100);
   pop();
 }
