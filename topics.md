@@ -1,7 +1,7 @@
-#TOPICS
-##Hopefully an, easy to find, weekly topic navigator
+# TOPICS
+## Hopefully an, easy to find, weekly topic navigator
 
-### [HELLO-WORLD]()
-### [INSTRUCTIONS]()
+### [INSTRUCTIONS](instructions-prot.md)
+
 ### [VARIABLES]()
 
