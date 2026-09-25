@@ -41,7 +41,7 @@ rocket.speed += rocket.acceleration;
  * Drawing the rocket
  */
     push();
-rectMode(CENTER);
+rectMode();
 noStroke();
 fill("rebeccapurple");
 square(rocket.x, rocket.y + rocket.height * 0.5, rocket.width);
