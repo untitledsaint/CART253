@@ -10,4 +10,4 @@ welcome welcome, here you will find any prototypes, projects and experiments tha
 ## USEFUL PATHS
 - [Topics //WORK IN PROGRESS](topics.md)
 - [Journal](journal.md)
-- [Github](https://github.com/untitledsaint/CART253)
+- [Github Repository](https://github.com/untitledsaint/CART253)
