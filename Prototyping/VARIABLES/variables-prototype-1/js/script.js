@@ -23,4 +23,10 @@ function draw(){
   ellipse(200, 130, 100, 60);
   ellipse(250, 130, 80, 50);
 
+
+  //cloud number 2
+  ellipse(550, 220, 70, 40);
+  ellipse(600, 220, 100, 60);
+  ellipse(650, 220, 70, 40);
+
 }
