@@ -1,112 +1,25 @@
 /**
- * Basic States
- * Pippin Barr
+ * VARIABLES ASSIGNMENT prototype 2 of 3
+ * antonyhatem
  *
- * A program to demonstrate the idea of a program with *states*
- * controlled by different functions so we can split it up into
- * a title, main part, and ending, for instance.
+ * This second prototype is a clock with a moving dial
  */
 
-// A circle that will move across the screen
-let circle = {
-  // Position and size
-  x: 0,
-  y: 250,
-  size: 100,
-  // Movement (note it starts NOT moving)
-  velocity: {
-    x: 0,
-    y: 0
-  },
-  speed: 2,
-};
-
-// Text to display for the title and ending
-let titleString = "Life: A Metaphor";
-let endingString = "Ah, mortality.";
-
-// Our current state is set to be TITLE so we should
-// display the TITLE when the program runs
-let state = "title";
-
-/**
- * Create the canvas, set up text
- */
-function setup() {
-  createCanvas(500, 500);
-
-  // Text settings
-  textSize(32);
-  textAlign(CENTER, CENTER);
+function setup(){
+  createCanvas(600, 800);
+    
 }
 
-/**
- * Depending on the current state, run the function
- * to handle the state.
- */
-function draw() {
-  // Check the state and call the appropriate function
-  if (state === "title") {
-    title();
-  }
-  else if (state === "animation") {
-    animation();
-  }
-  else if (state === "ending") {
-    ending();
-  }
-}
+function draw(){
+background(102, 51, 0)
 
-/**
- * Displays the title and waits for the user to press the mouse
- */
-function title() {
-  background("#0000ff");
-  
-  push();
-  fill("#ffffff");
-  text(titleString, width / 2, height / 2)
-  pop();
-  
-  if (mouseIsPressed) {
-    state = "animation";
-    circle.velocity.x = circle.speed;
-  }
-}
 
-/**
- * Animates the circle. Switches states if the circle reaches the end
- * of the canvas.
- */
-function animation() {
-  background("#000000");
-  
-  // Move the circle
-  circle.x += circle.velocity.x;
-  circle.y += circle.velocity.y;
+// front of the clock that will show the dials
+    fill(255);
+    stroke(0);
+    strokeWeight(2);
+    ellipse(300, 300, 400, 400);
 
-  // Draw the circle
-  push();
-  noStroke();
-  fill("#ff0000");
-  ellipse(circle.x, circle.y, circle.size);
-  pop();
-  
-  // Check if the circle has reached the edge of the canvas
-  if (circle.x > width) {
-    // If so, switch to the ending state!
-    state = "ending";
-  }
 }
-
-/**
- * Displays the ending text
- */
-function ending() {
-  background("#ff0000");
-  
-  push();
-  fill("#ffffff");
-  text(endingString, width / 2, height / 2)
-  pop();
-}
+    
+   

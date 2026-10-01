@@ -3,6 +3,7 @@
  * antonyhatem
  *
  * This is the prequel to the bird making mr.furious furious. this time the bird follows mr.enraged
+ * project made for CART 253 taught by Pippin Barr.
  */
 
 //simple sky and ground
@@ -37,7 +38,7 @@ function draw(){
   ellipse(mouseX + 10, mouseY - 5, 50, 30);
   ellipse(mouseX + 10, mouseY + 5, 50, 30);
 
-//last but not least mr. enraged
+//last but not least mr. enraged himself
   fill(230, 50, 50);
   rect(385, 400, 30, 60);
   rect(385, 460, 10, 60);
