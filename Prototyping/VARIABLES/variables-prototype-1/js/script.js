@@ -2,10 +2,10 @@
  * VARIABLES ASSIGNMENT prototype 1 of 3
  * antonyhatem
  *
- * This is the prequel to the bird making mr.furious furious. this time the bird follows your very will to annoy anyone you desire.
+ * This is the prequel to the bird making mr.furious furious. this time the bird follows mr.enraged
  */
 
-//simple sky and ground 
+//simple sky and ground
 
 function setup() {
   createCanvas(800, 600);
