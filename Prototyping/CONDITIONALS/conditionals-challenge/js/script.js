@@ -34,6 +34,7 @@ function draw() {
   background("#aaaaaa");
   
   // Move user circle
+  movePuck();
   moveUser();
   
   // Draw the user and puck
@@ -41,8 +42,8 @@ function draw() {
   drawUser();
 
 
-  
 }
+
 
 /**
  * Sets the user position to the mouse position
@@ -61,6 +62,32 @@ function drawUser() {
   fill(user.fill);
   ellipse(user.x, user.y, user.size);
   pop();
+}
+
+function movePuck(){
+    const d = dist(user.x, user.y, puck.x, puck.y);
+    const overlap = (d < user.size / 2 + puck.size / 2);
+    if (overlap) {
+
+    if(user.x < puck.x){
+puck.x += 1;
+
+
+    }
+    if(user.x > puck.x){
+        puck.x -= 1;
+    }
+    if(user.y < puck.y){
+        puck.y += 1;
+    }
+    if(user.y > puck.y){
+        puck.y -= 1;
+    }
+
+}
+
+
+
 }
 
 /**
