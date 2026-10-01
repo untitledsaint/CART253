@@ -2,7 +2,7 @@
  * VARIABLES ASSIGNMENT prototype 1 of 3
  * antonyhatem
  *
- * This will maybe be a bird flying...
+ * This is the prequel to the bird making mr.furious furious. this time the bird follows your very will to annoy anyone you desire.
  */
 
 //simple sky and ground 
@@ -28,5 +28,13 @@ function draw(){
   ellipse(550, 220, 70, 40);
   ellipse(600, 220, 100, 60);
   ellipse(650, 220, 70, 40);
+
+  //the one and only bird
+  fill(100)
+  stroke(10);
+  strokeWeight(3);
+  ellipse(mouseX, mouseY, 40, 30);
+  ellipse(mouseX + 10, mouseY - 5, 50, 30);
+  ellipse(mouseX + 10, mouseY + 5, 50, 30);
 
 }
