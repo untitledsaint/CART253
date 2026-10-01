@@ -1,7 +1,7 @@
 # ⌘ Antony's CART253 website ⌘
 //coursework website 
 ![Banner](images/MAIN-PAGE.png)
-<sup><sub>cart 214 collage made by me</sub></sup>
+<sup><sub>⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘</sub></sup>
 
 ## USEFUL PATHS
 - [Topics //WORK IN PROGRESS](topics.md)
