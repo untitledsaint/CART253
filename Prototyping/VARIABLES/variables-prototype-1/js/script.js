@@ -32,9 +32,15 @@ function draw(){
   //the one and only bird
   fill(100)
   stroke(10);
-  strokeWeight(3);
+  strokeWeight(2);
   ellipse(mouseX, mouseY, 40, 30);
   ellipse(mouseX + 10, mouseY - 5, 50, 30);
   ellipse(mouseX + 10, mouseY + 5, 50, 30);
 
+//last but not least mr. enraged
+  fill(230, 50, 50);
+  rect(385, 400, 30, 60);
+  rect(385, 460, 10, 60);
+  rect(405, 460, 10, 60);
+  ellipse(400, 400, 50, 50);
 }
