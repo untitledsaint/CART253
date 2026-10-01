@@ -6,12 +6,24 @@
  * on the canvas using their own circle.
  */
 
+const target = {
+    x: 300,
+    y: 300,
+    size: 150,
+    fill: "#0000ff",
+    fills: {
+        noOverlap: "#0000ff",
+        overlap: "#00ff00"
+    }
+};
+
 const puck = {
   x: 200,
   y: 200,
   size: 100,
   fill: "#ff0000"
 };
+
 
 const user = {
   x: undefined, // will be mouseX
@@ -36,11 +48,12 @@ function draw() {
   // Move user circle
   movePuck();
   moveUser();
+  checkTarget();
   
   // Draw the user and puck
+  drawTarget();
   drawPuck();
   drawUser();
-
 
 }
 
@@ -64,7 +77,7 @@ function drawUser() {
   pop();
 }
 
-function movePuck(){
+function movePuck() {
     const d = dist(user.x, user.y, puck.x, puck.y);
     const overlap = (d < user.size / 2 + puck.size / 2);
     if (overlap) {
@@ -83,12 +96,27 @@ puck.x += 1;
     if(user.y > puck.y){
         puck.y -= 1;
     }
-
+    }
 }
 
-
-
+function checkTarget(){
+    const d = dist(puck.x, puck.y, target.x, target.y);
+    const overlap = (d < puck.size / 2 + target.size / 2);
+    if (overlap) {
+        target.fill = target.fills.overlap;
+    } else {
+        target.fill = target.fills.noOverlap;
+    }
 }
+
+function drawTarget(){
+  push();
+  noStroke();
+  fill(target.fill);
+  ellipse(target.x, target.y, target.size);
+  pop();
+}
+    
 
 /**
  * Displays the puck circle
