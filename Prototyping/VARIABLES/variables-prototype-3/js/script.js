@@ -15,6 +15,8 @@ let planetSize = 200;
 let asteroidSmallerAngle = 0;
 let asteroidSmallerDistance = 170;
 // making variables for bigger second asteroid
+let asteroidBiggerAngle = 0;
+let asteroidBiggerDistance = 220;
 
 function setup(){
 
@@ -29,17 +31,32 @@ function draw(){
 fill(200, 100, 190);
 ellipse(planetX, planetY, planetSize);
 
-push()
+push();
+
 // first small asteroid (smaller) with rotation 
 
 translate(planetX, planetY)
 rotate(asteroidSmallerAngle);
+scale(1, 0.6);
 
 fill(205, 0, 127);
-ellipse(asteroidSmallerDistance, 0, 30, 20);
+ellipse(asteroidSmallerDistance, 0, 40, 40);
 
 pop();
+//second bigger asteroid with rotation
 
+push();
+translate(planetX, planetY)
+rotate(asteroidBiggerAngle);
+scale(1, 0.6);
+
+fill(205, 0, 127);
+ellipse(asteroidBiggerDistance, 0, 40, 40);
+
+pop();
+//asteroid movement and speed
 asteroidSmallerAngle = asteroidSmallerAngle + 0.003;
+asteroidBiggerAngle = asteroidBiggerAngle + 0.001;
+
 
 }
