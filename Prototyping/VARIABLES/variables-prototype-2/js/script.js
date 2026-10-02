@@ -3,6 +3,7 @@
  * antonyhatem
  *
  * This second prototype is a clock with a moving dial
+ *  * project made for CART 253 taught by Pippin Barr.
  */
   let hourHand = 0;
     let minutesHand = 0;
