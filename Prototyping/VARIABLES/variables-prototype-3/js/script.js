@@ -40,8 +40,12 @@ rotate(asteroidSmallerAngle);
 scale(1, 0.6);
 
 fill(205, 0, 127);
-ellipse(asteroidSmallerDistance, 0, 40, 40);
+ellipse(asteroidSmallerDistance, 0, 40, 50);
 
+noFill();
+stroke(255);
+strokeWeight(2);
+ellipse(0, 0, asteroidSmallerDistance * 2, asteroidSmallerDistance * 2)
 pop();
 //second bigger asteroid with rotation
 
@@ -50,8 +54,8 @@ translate(planetX, planetY)
 rotate(asteroidBiggerAngle);
 scale(1, 0.6);
 
-fill(205, 0, 127);
-ellipse(asteroidBiggerDistance, 0, 40, 40);
+fill(21, 176, 215);
+ellipse(asteroidBiggerDistance, 0, 40, 90);
 
 pop();
 //asteroid movement and speed
