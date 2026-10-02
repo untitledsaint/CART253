@@ -9,16 +9,16 @@
 // variables defining the main planet on the x y axis + size
 let planetX = 300;
 let planetY = 300;
-let planetSize = 180;
+let planetSize = 200;
 
 // making variables for first asteroid
-
-
+let asteroidSmallerAngle = 0;
+let asteroidSmallerDistance = 170;
 // making variables for bigger second asteroid
 
 function setup(){
 
-    createCanvas(800, 800);
+    createCanvas(600, 600);
 }
 
 function draw(){
@@ -28,4 +28,18 @@ function draw(){
 // main planet itself
 fill(200, 100, 190);
 ellipse(planetX, planetY, planetSize);
+
+push()
+// first small asteroid (smaller) with rotation 
+
+translate(planetX, planetY)
+rotate(asteroidSmallerAngle);
+
+fill(205, 0, 127);
+ellipse(asteroidSmallerDistance, 0, 30, 20);
+
+pop();
+
+asteroidSmallerAngle = asteroidSmallerAngle + 0.003;
+
 }
