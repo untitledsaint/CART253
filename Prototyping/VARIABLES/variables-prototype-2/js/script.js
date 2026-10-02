@@ -40,4 +40,14 @@ stroke(1);
 strokeWeight(10);
 line(0, 0, 0, -100);
 pop();
+
+//minutes clock hand.
+push();
+translate(300, 300);
+rotate(minutesHand);
+
+stroke(1);
+strokeWeight(5);
+line(0, 0, 0, -140);
+pop();
 }
