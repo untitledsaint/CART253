@@ -57,6 +57,11 @@ scale(1, 0.6);
 fill(21, 176, 215);
 ellipse(asteroidBiggerDistance, 0, 40, 90);
 
+noFill();
+stroke(255);
+strokeWeight(2);
+ellipse(0, 0, asteroidBiggerDistance * 2, asteroidBiggerDistance * 2);
+
 pop();
 //asteroid movement and speed
 asteroidSmallerAngle = asteroidSmallerAngle + 0.003;
