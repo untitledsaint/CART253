@@ -7,6 +7,7 @@
 
 "use strict";
 
+let selectedSin = "";
 /**
  *creates canvas
 */
@@ -29,8 +30,26 @@ function draw() {
     if (mouseIsPressed && 
         mouseX > 115 && mouseX < 185 &&
         mouseY > 115 && mouseY < 185) {
+            selectedSin = "WRATH"; 
         
 
     }
+
+    //displays sin you clicked on
+    fill(255);
+    textSize(30);
+    textAlign(CENTER);
+
+    if (selectedSin == "WRATH") {
+        text("WRATH", 310, 310);
+        textSize(18);
+        text("You let your anger control you", 300, 330);
+    }
+
+
+
+
+
+
 
 }
