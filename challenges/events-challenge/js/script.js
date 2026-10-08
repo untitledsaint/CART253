@@ -54,13 +54,7 @@ function displayUI() {
 }
 
 function lose() {
-  // if(keyPressed){
-  //   push();
-  //   textsize(48);
-  //   textStyle(BOLD);
-  //   textAlign(CENTER, CENTER);
-  //   text 
-  // }
+ 
   gameOver = true;
 }
 
@@ -76,8 +70,17 @@ function keyTyped(){
   lose()
 }
 
+function mousePressed(){
+    lose()
+}
 
+function mouseReleased(){
+    lose()
+}
 
+function mouseMoved(){
+    lose()
+}
 
 /**
  * Display the score
