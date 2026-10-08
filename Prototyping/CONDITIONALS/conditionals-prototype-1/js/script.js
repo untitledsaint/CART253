@@ -7,6 +7,9 @@
 
 "use strict";
 
+let pokemon = "";
+let rarity = "";
+let chance = "";
 /**
  * making the canvas for the game.
 */
@@ -37,5 +40,54 @@ function draw() {
     fill(255);
     text("OPEN PACK", 300, 157);
     textSize(20);
+
+    // text displaying the pokemon you got
+    text(pokemon, 300, 270);
+    textSize(32);
+
+    // text displaying the rarity for that pokemon
+    text(rarity, 300, 305);
+    textSize(22)
+
+    // text displaying the drop chance % for the pokemon
+    text(chance, 300, 335);
+    textSize(16);
+
+    // checks if cursor is within red button bounds, also when clicked makes a 0 - 100 random number
+
+    if (mouseIsPressed &&
+        mouseX > 200 && mouseX < 400 &&
+        mouseY > 200 && mouseY < 180) { 
+
+    let roll = random(100);
+
+
+    // 70% chance of common pokemon
+
+    if (roll < 70) {
+
+        rarity = "COMMON";
+        chance = "70%"
+
+        let pokemonRoll = random(4);
+
+        if (pokemonRoll < 1) {
+            pokemon = "Bulbasaur";
+        }
+        else if (pokemonRoll < 2) {
+            pokemon = "Charmander";
+        }
+        else if (pokemonRoll < 3) {
+            pokemon = "Squirtle"; 
+        }
+        else {
+            pokemon = "Pidgey";
+        }
+    }
+
+
+
+        }
+
 
 }
