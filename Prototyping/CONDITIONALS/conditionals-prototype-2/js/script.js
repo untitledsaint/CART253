@@ -119,58 +119,55 @@ function draw() {
     fill(255);
     textSize(30);
     textAlign(CENTER);
-
+    // displays wrath name and phrase
     if (selectedSin == "WRATH") {
         text("WRATH", 300, 200);
         textSize(18);
         text("You let your anger control you", 300, 230);
     }
 
-
+// displays greed name and phrase
     if (selectedSin == "GREED") {
         text("GREED", 300, 200);
         textSize(18);
-        text("You let your anger control you", 300, 230);
+        text("You always want more and more", 300, 230);
     }
 
-
-    if (selectedSin == "WRATH") {
-        text("WRATH", 300, 200);
+// displays envy name and phrase
+    if (selectedSin == "ENVY") {
+        text("ENVY", 300, 200);
         textSize(18);
-        text("You let your anger control you", 300, 230);
+        text("You want what others have", 300, 230);
     }
 
-
-    if (selectedSin == "WRATH") {
-        text("WRATH", 300, 200);
+// displays sloth name and phrase
+    if (selectedSin == "SLOTH") {
+        text("SLOTH", 300, 200);
         textSize(18);
-        text("You let your anger control you", 300, 230);
+        text("You never want to do anything", 300, 230);
     }
 
 
-    if (selectedSin == "WRATH") {
-        text("WRATH", 300, 200);
+// displays lust name and phrase
+    if (selectedSin == "LUST") {
+        text("LUST", 300, 200);
         textSize(18);
-        text("You let your anger control you", 300, 230);
+        text("Desire and love takes control", 300, 230);
     }
 
-
-    if (selectedSin == "WRATH") {
-        text("WRATH", 300, 200);
+// displays pride name and phrase
+    if (selectedSin == "PRIDE") {
+        text("PRIDE", 300, 200);
         textSize(18);
-        text("You let your anger control you", 300, 230);
+        text("You think you are better than everyone", 300, 230);
     }
 
-
-    if (selectedSin == "WRATH") {
-        text("WRATH", 300, 200);
+// displays gluttony name and phrase
+    if (selectedSin == "GLUTTONY") {
+        text("GLUTTONY", 300, 200);
         textSize(18);
-        text("You let your anger control you", 300, 230);
+        text("You always want to consume more", 300, 230);
     }
-
-
-
-
 
 
 
