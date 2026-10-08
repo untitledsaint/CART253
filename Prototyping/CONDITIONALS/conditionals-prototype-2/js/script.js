@@ -23,8 +23,33 @@ function draw() {
     background(30);
 
     //red circle wrath
-    fill (200, 50, 50);
-    ellipse(150, 150, 70, 70);
+    fill (220, 50, 50);
+    ellipse(100, 100, 60, 60);
+
+    //orange circle greed
+    fill(240, 150, 30)
+    ellipse(250, 100, 60, 60);
+
+    //green circle envy
+    fill (80, 230, 80);
+    ellipse (400, 100, 60, 60);
+
+    //blue circle sloth
+    fill(80, 130, 230);
+    ellipse(500, 220, 60, 60);
+
+    //purple circle lust
+    fill(180, 70, 180);
+    ellipse(400, 320, 60, 60);
+
+    //pink circle pride
+    fill(250, 100, 150);
+    ellipse(250, 320, 60, 60);
+
+    //brown circle gluttony 
+    fill(180, 120, 50);
+    ellipse(100, 250, 60, 60);
+
 
     // detects if cursor is on circle 
     if (mouseIsPressed && 
