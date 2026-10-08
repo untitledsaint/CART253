@@ -51,11 +51,66 @@ function draw() {
     ellipse(100, 250, 60, 60);
 
 
-    // detects if cursor is on circle 
+    // detects if cursor is on wrath circle 
     if (mouseIsPressed && 
-        mouseX > 115 && mouseX < 185 &&
-        mouseY > 115 && mouseY < 185) {
+        mouseX > 70 && mouseX < 130 &&
+        mouseY > 70 && mouseY < 130) {
             selectedSin = "WRATH"; 
+        
+
+    }
+
+
+    // detects if cursor is on greed circle 
+    if (mouseIsPressed && 
+        mouseX > 220 && mouseX < 280 &&
+        mouseY > 70 && mouseY < 130) {
+            selectedSin = "GREED"; 
+        
+
+    }
+
+    // detects if cursor is on envy circle 
+    if (mouseIsPressed && 
+        mouseX > 370 && mouseX < 430 &&
+        mouseY > 70 && mouseY < 130) {
+            selectedSin = "ENVY"; 
+        
+
+    }
+
+    // detects if cursor is on sloth circle 
+    if (mouseIsPressed && 
+        mouseX > 470 && mouseX < 530 &&
+        mouseY > 190 && mouseY < 250) {
+            selectedSin = "SLOTH"; 
+        
+
+    }
+
+    // detects if cursor is on lust circle 
+    if (mouseIsPressed && 
+        mouseX > 370 && mouseX < 430 &&
+        mouseY > 290 && mouseY < 350) {
+            selectedSin = "LUST"; 
+        
+
+    }
+
+    // detects if cursor is on pride circle 
+    if (mouseIsPressed && 
+        mouseX > 220 && mouseX < 280 &&
+        mouseY > 290 && mouseY < 350) {
+            selectedSin = "PRIDE"; 
+        
+
+    }
+
+    // detects if cursor is on gluttony circle 
+    if (mouseIsPressed && 
+        mouseX > 70 && mouseX < 130 &&
+        mouseY > 220 && mouseY < 280) {
+            selectedSin = "GLUTTONY"; 
         
 
     }
@@ -66,9 +121,51 @@ function draw() {
     textAlign(CENTER);
 
     if (selectedSin == "WRATH") {
-        text("WRATH", 310, 310);
+        text("WRATH", 300, 200);
         textSize(18);
-        text("You let your anger control you", 300, 330);
+        text("You let your anger control you", 300, 230);
+    }
+
+
+    if (selectedSin == "GREED") {
+        text("GREED", 300, 200);
+        textSize(18);
+        text("You let your anger control you", 300, 230);
+    }
+
+
+    if (selectedSin == "WRATH") {
+        text("WRATH", 300, 200);
+        textSize(18);
+        text("You let your anger control you", 300, 230);
+    }
+
+
+    if (selectedSin == "WRATH") {
+        text("WRATH", 300, 200);
+        textSize(18);
+        text("You let your anger control you", 300, 230);
+    }
+
+
+    if (selectedSin == "WRATH") {
+        text("WRATH", 300, 200);
+        textSize(18);
+        text("You let your anger control you", 300, 230);
+    }
+
+
+    if (selectedSin == "WRATH") {
+        text("WRATH", 300, 200);
+        textSize(18);
+        text("You let your anger control you", 300, 230);
+    }
+
+
+    if (selectedSin == "WRATH") {
+        text("WRATH", 300, 200);
+        textSize(18);
+        text("You let your anger control you", 300, 230);
     }
 
 
