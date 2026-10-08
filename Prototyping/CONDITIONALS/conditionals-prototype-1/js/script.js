@@ -42,22 +42,25 @@ function draw() {
     textSize(20);
 
     // text displaying the pokemon you got
-    text(pokemon, 300, 270);
     textSize(32);
+    text(pokemon, 300, 270);
+    
 
     // text displaying the rarity for that pokemon
-    text(rarity, 300, 305);
     textSize(22)
+    text(rarity, 300, 305);
+    
 
     // text displaying the drop chance % for the pokemon
+     textSize(16);
     text(chance, 300, 335);
-    textSize(16);
+   
 
     // checks if cursor is within red button bounds, also when clicked makes a 0 - 100 random number
 
     if (mouseIsPressed &&
         mouseX > 200 && mouseX < 400 &&
-        mouseY > 200 && mouseY < 180) { 
+        mouseY > 120 && mouseY < 180) { 
 
     let roll = random(100);
 
@@ -85,7 +88,44 @@ function draw() {
         }
     }
 
+    // 25% chance of rare pokemon
+    else if (roll < 95) {
 
+        rarity = "RARE";
+        chance = "25%";
+
+        let pokemonRoll = random(3);
+
+        if (pokemonRoll < 1) {
+            pokemon = "Pikachu";
+        }
+        else if (pokemonRoll < 2) {
+            pokemon = "Eevee";
+
+        }
+        else {
+            pokemon = "Gengar";
+        }
+    }
+
+
+    // 5% chance of legendary pokemon
+
+    else {
+
+        rarity = "LEGENDARY";
+        chance = "5%";
+
+        let pokemonRoll = random(2);
+
+        if (pokemonRoll < 1){
+            pokemon = "Mewtwo";
+
+        }
+        else {
+            pokemon = "Lugia";
+        }
+    }
 
         }
 
