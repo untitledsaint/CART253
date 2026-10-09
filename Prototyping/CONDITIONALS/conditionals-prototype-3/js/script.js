@@ -1,50 +1,56 @@
 /**
- * Containment breach
+ * Ant infestation on a pavement
  * antonyhatem
  * 
- * This prototype will be mold spreading out of a lab. The mold will move and spread across the screen.
+ * This prototype will be ants running around pavement. when your cursor is near an ant, it will stop moving.
  */
 
 "use strict";
 
-let backgroundImage;
-let moldX = 300;
-let moldY = 200;
+let molds = [];
 
-//mold movement speed
-let speedX = 2;
-let speedY =1; 
-
-/**
- * makes the canvas
-*/
 function setup() {
-    createCanvas(600, 600)
+  // creates the canvas
+  createCanvas(windowWidth, windowWidth);
+
+  // creates a handful of molds with random speed and position
+  for (let i = 0; i < 15; i++) {
+    molds.push({
+      x: random(width),
+      y: random(height),
+      speedX: random(-2, 2),
+      speedY: random(-2, 2)
+    });
+  }
 }
 
-
-/**
- * makes background and some mold
-*/
 function draw() {
-    background(200)
+    //background
+  background(170);
 
-// draws mold 
-fill(51, 51, 0);
-noStroke();
-ellipse(moldX, moldY, 30, 30);
+  // moves and draws all the mold, had to see online how to code this.
+  for (let i = 0; i < molds.length; i++) {
+    let mold = molds[i];
 
-//if mold leaves canvas it will be brought back randomly
-if (moldX < 0 || moldX > width ||
-    moldY < 0 || moldY > height) {
-        moldX = random(width);
-        moldY = random(height);
+    // mesures distance of mold and cursor
+    let distance = dist(mouseX, mouseY, mold.x, mold.y);
+
+    // moves mold away if cursor is close
+    if (distance > 50) {
+      mold.x = mold.x + mold.speedX;
+      mold.y = mold.y + mold.speedY;
     }
 
-//moves mold from its position
-moldX = moldX + speedX;
-moldY = moldY + speedY;
+    // gives mold a random position after it left the canvas
+    if (mold.x < 0 || mold.x > width ||
+        mold.y < 0 || mold.y > height) {
+      mold.x = random(width);
+      mold.y = random(height);
+    }
 
+    // draws little mold
+    fill(51, 51, 0);
+    noStroke();
+    ellipse(mold.x, mold.y, 30, 30);
+  }
 }
-
-   
