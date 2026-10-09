@@ -19,7 +19,12 @@ third entry in the journal, the variables prototyping was actually not as hard a
 <sup><sub>screenshot of my variables prototype 3</sub></sup>
 
 ## october 7 2026
-// ... 
+// fourth entry in the journal. conditionals are kind of nice, complex but nice. It's nice being able to play with randomness which i did and use of text. I like the idea of being able to make interactive text and motions through clicks. its always satisfying and pretty much a staple in everything we do, so its nice to do it yourself from scratch. Parts that are difficult come from the increasing complexity of the prototypes. You have to take account of more and more concepts and functions. I dont have much time to study in general so its hard to keep track of everything. I hope the interactive nature of my prototypes makes people intrigued and curious perhaps, im not too sure. I would of course love to get better at making these more proficiently. and with more free time.
+![image](images/CONDITIONALS-PROT1:3.png)
+<sup><sub>screenshot of my conditionals prototype 1</sub></sup>
+
+## ...
+// ...
 
 
 
