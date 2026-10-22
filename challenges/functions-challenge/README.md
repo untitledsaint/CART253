@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# functions challenge
 
-AUTHOR NAME
+antony, anum,  alissa, pippin barr (did most of the heavy lifting)
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
