@@ -16,7 +16,7 @@ const ball = {
     height: 10,
     velocity: {
         x: 0,
-        y: 10
+        y: 0,
     }
 };
 
@@ -33,6 +33,9 @@ const paddle = {
 */
 function setup() {
     createCanvas(600, 300);
+    ball = createball();
+    
+
 }
 
 
@@ -51,6 +54,9 @@ function draw() {
     drawBall(ball);
 }
 
+
+
+
 /**
  * Moves the paddle
  */
@@ -62,16 +68,23 @@ paddle.x = mouseX
  * Moves the ball passed in as a parameter
  */
 function moveBall(ball) {
-ball.velocity.x
-ball.velocity.y
+    ball.velocity.y += 0.4
+  ball.x += ball.velocity.x
+  ball.y += ball.velocity.y 
 }
 
 /**
  * Bounces the provided ball off the provided paddle
  */
 function handleBounce(ball, paddle) {
-
+  // checkOverlap if coverlpay yes then ball.y += ball.velocity.y
+  const overlap = checkOverlap(ball, paddle)
+  if(overlap) {
+    ball.velocity.y = -ball.velocity.y;
+  }
 }
+  
+
 
 /**
  * Draws the specified paddle on the canvas
@@ -103,10 +116,13 @@ function drawBall(ball) {
  * their rectangles, and that rectA and rectB are displayed CENTERED on their
  * x,y coordinates.
  */
-function checkOverlap(rectA, rectB) {
-  return (rectA.x + rectA.width/2 > rectB.x - rectB.width/2 &&
-          rectA.x - rectA.width/2 < rectB.x + rectB.width/2 &&
-          rectA.y + rectA.height/2 > rectB.y - rectB.height/2 &&
-          rectA.y - rectA.height/2 < rectB.y + rectB.height/2);
-}
+function checkOverlap(ball, paddle) {
+  return (ball.x + ball.width/2 > paddle.x - paddle.width/2 &&
+          ball.x - ball.width/2 < paddle.x + paddle.width/2 &&
+          ball.y + ball.height/2 > paddle.y - paddle.height/2 &&
+          ball.y - ball.height/2 < paddle.y + paddle.height/2);
+  
 
+  
+
+}
