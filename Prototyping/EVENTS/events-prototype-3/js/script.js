@@ -1,23 +1,17 @@
 /**
- * twin button sound effects
+ * survive spawning ennemies
  * antonyhatem
  * 
- * for this third prototype, its going to be two clickable buttons that each have their respective ambiant sound that plays from them. one is relaxing, one is a bit more weird
+ * for this third prototype, its going to be a little game where you survive incoming ennemies that will try and touch your cursor. avoid them.
  */
 
 "use strict";
-
-/**
- * makes canvas
-*/
+//makes canvas
 function setup() {
-    create canvas
+    createCanvas(1000, 1000);
+
 }
-
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+//makes background + other draws
 function draw() {
-
+    background(10);
 }
