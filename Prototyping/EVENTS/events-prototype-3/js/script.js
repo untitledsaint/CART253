@@ -33,6 +33,41 @@ if (gameOver) {
 
     return;
 }
+//at each frame it increases the enemy timer basically
+enemyTimer++;
 
-    
+//enemy randomized spawn
+if (enemyTimer > 30) {
+    let enemy = {
+        x: random(width),
+        y: random(height)
+    };
+    //adds new enemy to list
+    enemies.push(enemy);
+
+//resets enemy timer so that a new one appears again after 30 frames
+    enemyTimer = 0;
+}
+// goes through every enemy in list (watched small video i got lost)
+for (let enemy of enemies){
+
+//calculates distance between enemy and cursor (watched a small video for this i got lost)
+    let distanceToCursor = dist(
+        enemy.x,
+        enemy.y,
+        mouseX,
+        mouseY
+    );
+    //makes the enemies faster as more and more appear, they accelerate even faster when near the cursor (watched a video)
+let speed = 4 + enemies.length * 0.2 + 250 / (distanceToCursor + 1);
+}
+
+let directionX = mouseX - enemy.x;
+let directionY = mouseY - enemy.y;
+
+enemy.x += directionX * speed / (distanceToCursor + 1);
+enemy.y += directionY * speed / (distanceToCursor + 1);
+// player cursor acts as a little white circle
+    fill(255);
+    circle(mouseX, mouseY, 10)
 }
