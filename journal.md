@@ -23,10 +23,10 @@ third entry in the journal, the variables prototyping was actually not as hard a
 ![image](images/CONDITIONALS-PROT1:3.png)
 <sup><sub>screenshot of my conditionals prototype 1</sub></sup>
 
-## ...
-// ...
-
-
+## october 23 2026
+// fifth entry in the journal. and boy let me tell you i did not have fun this week. it was pretty much my fault for not having done this during reading week for i was quite exhausted for many reasons, and of course like any good university student i somehow cramped this all in day. i had many issues with putting gifs and sounds, so because of that i ditched them completely by making more 'standard' stuff that im not really happy about which were all really time consuming and more time consuming than i thought. yes i am quite satisfied that i managed to make these out of nothing but also i wished to do something more of my liking, which did not happen...  not to mention working from 5pm to nearly 2am is not the best thing to do let me keep it a buck. anyway i hope theres some enjoyment out of these prototypes.
+![image](images/EVENTS-PROT2:3.png)
+<sup><sub>screenshot of my events prototype 2</sub></sup>
 
 
 

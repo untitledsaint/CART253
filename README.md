@@ -60,6 +60,20 @@ welcome welcome, here you will find any prototypes, projects and experiments tha
 ### [//prototype-3](https://untitledsaint.github.io/CART253/Prototyping/CONDITIONALS/conditionals-prototype-3/)
 [PROTOTYPE 3 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/CONDITIONALS/conditionals-prototype-3)
 
+# PROTOTYPING: EVENTS
+## prototype 1
+![Image](images/EVENTS-PROT1:3.png)
+### [//prototype-1](https://untitledsaint.github.io/CART253/Prototyping/EVENTS/events-prototype-1/)
+[PROTOTYPE 1 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/EVENTS/events-prototype-1)
+## prototype 2
+![Image](images/EVENTS-PROT2:3.png)
+### [//prototype-2](https://untitledsaint.github.io/CART253/Prototyping/EVENTS/events-prototype-2/)
+[PROTOTYPE 2 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/EVENTS/events-prototype-2)
+## prototype 3
+![Image](images/EVENTS-PROT3:3.png)
+### [//prototype-3](https://untitledsaint.github.io/CART253/Prototyping/EVENTS/events-prototype-3/)
+[PROTOTYPE 3 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/EVENTS/events-prototype-3)
+
 ### ✿ enjoy the stay ✿
 
 
