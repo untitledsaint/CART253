@@ -1,18 +1,17 @@
 /**
- * Title of Project
- * Author Name
+ * twin button sound effects
+ * antonyhatem
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * for this third prototype, its going to be two clickable buttons that each have their respective ambiant sound that plays from them. one is relaxing, one is a bit more weird
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * makes canvas
 */
 function setup() {
-
+    create canvas
 }
 
 
