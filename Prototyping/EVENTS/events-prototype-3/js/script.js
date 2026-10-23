@@ -60,14 +60,20 @@ for (let enemy of enemies){
     );
     //makes the enemies faster as more and more appear, they accelerate even faster when near the cursor (watched a video)
 let speed = 4 + enemies.length * 0.2 + 250 / (distanceToCursor + 1);
-}
+
 
 let directionX = mouseX - enemy.x;
 let directionY = mouseY - enemy.y;
+//moves enemies horizontally and vertically towards cursor
 
 enemy.x += directionX * speed / (distanceToCursor + 1);
 enemy.y += directionY * speed / (distanceToCursor + 1);
+
 // player cursor acts as a little white circle
     fill(255);
     circle(mouseX, mouseY, 10)
+    fill (255, 50, 50);
+    noStroke();
+    circle(enemy.x, enemy.y, enemySize);
+}
 }
