@@ -72,8 +72,17 @@ enemy.y += directionY * speed / (distanceToCursor + 1);
 // player cursor acts as a little white circle
     fill(255);
     circle(mouseX, mouseY, 10)
+
+    //enemy red circles
     fill (255, 50, 50);
     noStroke();
     circle(enemy.x, enemy.y, enemySize);
+    
+    if (distanceToCursor < enemySize / 2 + 5) {
+        // ends game if requirements meet (and if it works lmao)
+        gameOver = true;
+    }
+    
+
 }
 }
