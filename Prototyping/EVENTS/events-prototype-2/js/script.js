@@ -8,39 +8,56 @@
 
 "use strict";
 
-//word that fill be following cursor
+// word that follows mouse
 let word = "YOU CANT STOP ME";
 
-//stores words left on screen(supposedly)
+// stores words on screen
 let words = [];
-//word color
-let wordcolor;
-/**
- * makes canvas 
-*/
 
+// word color
+let wordColor;
+
+// makes canvas
 function setup() {
-    createCanvas(windowHeight, windowWidth);
+  createCanvas(windowHeight, windowWidth);
 
-wordColor = color(255);
+  // starting word color
+  wordColor = color(255);
 
-    textSize(30);
-    textAlign(CENTER, CENTER);
+  // text style
+  textSize(30);
+  textAlign(CENTER, CENTER);
 }
 
-
-/**
- * makes background 
-*/
+// draws
 function draw() {
-background(25);
+  background(0);
 
-fill(wordColor);
-text(word, mouseX, mouseY);
+  // draws all the words left behind
+  for (let i = 0; i < words.length; i++) {
+    fill(words[i].color);
+    text(word, words[i].x, words[i].y);
+  }
 
+  // leaves new word at mouse position
+  words.push({
+    x: mouseX,
+    y: mouseY,
+    color: wordColor
+  });
 
+  // draws the word following cursor
+  fill(wordColor);
+  text(word, mouseX, mouseY);
+}
 
+// changes color to random once left or right click is clicked
+function mousePressed() {
 
-
-
+  // picks a random color
+  wordColor = color(
+    random(255),
+    random(255),
+    random(255)
+  );
 }
