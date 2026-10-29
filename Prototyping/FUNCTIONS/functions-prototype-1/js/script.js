@@ -72,14 +72,24 @@ function MouseOnSin(sin) {
     //i think this should return "true" if the mouse in inside circle bounds?
     return distance < sin.size / 2;
 }
-
+//displays description of selected sin, along with its name in big.
 function drawDescription(sin) {
     fill(255);
-
+//centers text correctly and writes the name
     textAlign(CENTER);
     textSize(30);
     text(sin.name, 300, 200);
-
+//writes description
     textSize(18);
     text(sin.description, 300, 230);
+}
+//when you click
+function mousePressed() {
+//checks sins 
+for (let sin of sins) {
+    //makes sure and checks if cursor is on circle
+    if (MouseOnSin(sin)) {
+        selectedSin = sin;
+    }
+  }
 }
