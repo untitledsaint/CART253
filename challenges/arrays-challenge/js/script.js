@@ -1,6 +1,6 @@
 /**
  * Boingo
- * Pippin Barr
+ * alissa anum antony
  *
  * A ball that bounces around on the canvas
  */
@@ -28,7 +28,7 @@ function createBall() {
     y: 200,
     size: 20,
     // Colour
-    fill: "#000000",
+    fill: "#dbc800ff",
     // Movement
     velocity: {
       x: random(-5, 5),
@@ -38,16 +38,19 @@ function createBall() {
   return newBall;
 }
 
+
+
+
 /**
  * Moves and draws the ball
  */
 function draw() {
-  background("#87ceeb");
+  background("#00cdaeff");
   
   for (let ball of balls) {
-  moveBall();
-  bounceBall();
-  drawBall();
+  moveBall(ball);
+  bounceBall(ball);
+  drawBall(ball);
 }
 }
 
@@ -55,7 +58,7 @@ function draw() {
 /**
  * Moves the ball according to its velocity
  */
-function moveBall() {
+function moveBall(ball) {
   ball.x += ball.velocity.x;
   ball.y += ball.velocity.y;
 }
@@ -63,7 +66,7 @@ function moveBall() {
 /**
  * Bounces the ball off the walls
  */
-function bounceBall() {
+function bounceBall(ball) {
   // Check if the ball has reached the left or right
   const bounceX = (ball.x > width || ball.x < 0);
   // Check if the ball has reached the top or bottom
@@ -82,10 +85,17 @@ function bounceBall() {
 /**
  * Draw the ball on the canvas
  */
-function drawBall() {
+function drawBall(ball) {
   push();
   noStroke();
   fill(ball.fill);
   ellipse(ball.x, ball.y, ball.size);
   pop();
 }
+
+function mousePressed() {
+ let newBall = createBall(mouseX, mouseY);
+    balls.push(newBall);
+ }
+
+ 
