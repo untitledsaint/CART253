@@ -4,7 +4,7 @@
  *
  * A ball that bounces around on the canvas
  */
-
+let balls = []
 let ball = undefined; // Will create it with createBall()
 
 /**
@@ -44,10 +44,13 @@ function createBall() {
 function draw() {
   background("#87ceeb");
   
+  for (let ball of balls) {
   moveBall();
   bounceBall();
   drawBall();
 }
+}
+
 
 /**
  * Moves the ball according to its velocity
