@@ -1,6 +1,6 @@
-### instructions challenge
-### variables challenge
-### conditionals challenge
-### events challenge 
-### functions challenge
-### [arrays challenge] (https://untitledsaint.github.io/CART253/challenges/arrays-challenge/)
+### ![instructions challenge](https://untitledsaint.github.io/CART253/challenges/instructions-challenge/)
+### ![variables challenge](https://untitledsaint.github.io/CART253/challenges/variables-challenge/)
+### ![conditionals challenge](https://untitledsaint.github.io/CART253/challenges/conditionals-challenge/)
+### ![events challenge](https://untitledsaint.github.io/CART253/challenges/events-challenge/)
+### ![functions challenge](https://untitledsaint.github.io/CART253/challenges/instructions-challenge/)
+### ![arrays challenge](https://untitledsaint.github.io/CART253/challenges/arrays-challenge/)
