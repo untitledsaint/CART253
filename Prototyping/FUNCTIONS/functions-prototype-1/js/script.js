@@ -10,6 +10,8 @@
 //stores info about all the sins
 let sins = [];
 
+let selectedSin = null;
+
 
 function setup() {
 
