@@ -4,8 +4,10 @@
 <sup><sub>⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘</sub></sup>
 
 ## USEFUL PATHS
-  ### [Journal](journal.md)
-- [Github Repository](https://github.com/untitledsaint/CART253)
+ [Journal](journal.md)
+ [Github Repository](https://github.com/untitledsaint/CART253)
+ [Challenges](challenges-page.md)
+  
 
 welcome welcome, here you will find any prototypes, projects and experiments that fall under CART 253 taught by [Pippin Barr](https://pippinbarr.com)
 
