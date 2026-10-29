@@ -37,9 +37,49 @@ function createSin(name, description, x, y, colour) {
         size: 60,
         colour: colour
     };
-    return sin;
+    return sin
+}
+//draws handful of features that are further described
+function draw(){
+    //makes background color
+    background(30);
+    for (let sin of sins) {
+
+        //draws current sin
+        drawSin(sin);
+    }
+        //checks if sin is selected
+
+    if (selectedSin !== null) {
+
+        //displays name+description
+        drawDescription(selectedSin);
+    }
+}
+//draws sin
+function drawSin(sin){
+    //uses colour stored
+    fill(sin.colour[0], sin.colour[1], sin.colour[2]);
+    noStroke();
+    //draws circle associated with its size / x-y
+    ellipse(sin.x, sin.y, sin.size);
+}
+//functions that checks if mouse if over a sin circle
+function MouseOnSin(sin) {
+// calculates distance between mouse and circle middle point
+    let distance = dist(mouseX, mouseY, sin.x, sin.y);
+
+    //i think this should return "true" if the mouse in inside circle bounds?
+    return distance < sin.size / 2;
 }
 
-function draw(){
-    background(30);
+function drawDescription(sin) {
+    fill(255);
+
+    textAlign(CENTER);
+    textSize(30);
+    text(sin.name, 300, 200);
+
+    textSize(18);
+    text(sin.description, 300, 230);
 }
