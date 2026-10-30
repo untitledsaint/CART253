@@ -7,17 +7,11 @@
  */
 
 "use strict";
-let circle = {
-  x: 500,
-  y: 500,
-  originalX: 500,
-  originalY: 500,
-  size: 15,
-  speed: 0.04
-};
+let circle;
 
 function setup() {
   createCanvas(1000, 1000);
+  circle = createCircle();
 }
 
 function draw() {
@@ -47,4 +41,19 @@ function drawCircle(circle) {
   fill(255);
   noStroke();
   ellipse(circle.x, circle.y, circle.size);
+}
+
+function createCircle() {
+    let x = random(20, 980);
+    let y = random(20, 980);
+
+    return {
+        x: x,
+        y: y,
+        originalX: x,
+        originalY: y,
+        size: random(5, 12),
+        speed: 0.04
+
+    };
 }
