@@ -20,26 +20,31 @@ function setup() {
 
 
 /**
- *draws circle
+ *draws handful of useful things 
 */
 function draw() {
     background(30);
+
 // chceks distance between cursor and circle
     let distance = dist(mouseX, mouseY, circle.x, circle.y);
+
+
 //checks if mouse is inside circle bounds
     let hovering = distance < circle.size / 2;
+
+
 //changes color for circle after hovering over
     if (hovering && !circle.isHovered) {
         circle.colour = color(random(255), random(255), random(255));
     }
 // i think remembers if cursor is over a circle
-    isHovered = hovering;
+    circle.isHovered = hovering;
 
     fill(circle.colour);
     noStroke();
-    ellipse(circle.x, Circle.y, Circle.size);
+    ellipse(circle.x, circle.y, circle.size);
 }
-
+//creates and returns circle object
 function createCircle(x, y) {
     return {
         x: x,
