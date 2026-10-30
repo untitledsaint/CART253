@@ -9,16 +9,20 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * makes canvas
 */
 function setup() {
-
+    createCanvas(1000, 1000);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * makes background and circle
 */
 function draw() {
+    background(20);
 
+    fill(255);
+    noStroke();
+    ellipse(500, 500, 15);
 }
