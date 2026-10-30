@@ -78,7 +78,7 @@ welcome welcome, here you will find any prototypes, projects and experiments tha
 
 # PROTOTYPING: FUNCTIONS
 ## prototype 1
-![Image](images/FUNCTIONS-PROT1:3.png)
+![Image](images/CONDITIONALS-PROT2:3.png)
 ### [//prototype-1](https://untitledsaint.github.io/CART253/Prototyping/FUNCTIONS/functions-prototype-1/)
 [PROTOTYPE 1 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/FUNCTIONS/functions-prototype-1)
 ## prototype 2

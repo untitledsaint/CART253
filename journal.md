@@ -28,6 +28,11 @@ third entry in the journal, the variables prototyping was actually not as hard a
 ![image](images/EVENTS-PROT2:3.png)
 <sup><sub>screenshot of my events prototype 2</sub></sup>
 
+## october 30 2026
+// sixth entry in the journal. this week was about functions. i was actually quite happy with what i made. what surprised me was how useful and more or less easy on using them. they werent as bad as i thought and i could definitely see myself using these alot more. I will say the difficult part is maybe keeping track of multiple functions if you use a handful for one project/prototype. sometimes in class or even making these prototypes i would make a small mistake without realising and it would stun progress, easily fixable but a bit annoying to be fair. In any case it's super cool now to be able to expand our ways of making sick visuals and concepts on javascript. I think this was really my most digestable assignment week and i really liked my prototypes. I'd love to make some more concepts with images and audio perhaps, i haven't used them as much as i had hoped but we'll see!
+![image](images/FUNCTIONS-PROT3:3.png)
+<sup><sub>screenshot of my functions prototype 3</sub></sup>
+
 
 
 
