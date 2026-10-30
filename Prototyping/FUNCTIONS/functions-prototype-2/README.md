@@ -1,12 +1,13 @@
-# TITLE OF PROJECT
+# DOTS DOTS DOTS
 
-AUTHOR NAME
+antonyhatem
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+second prototype is an interactive canvas of polka dots that change colors randomly after hovering cursor over them. makes for a satisfying sight of colors after coloring every dot.
+ 
 
 ## Attribution
 
@@ -18,6 +19,6 @@ This bit should attribute any code, assets or other elements used taken from oth
 
 ## License
 
-This bit could include the license you want to apply to your work. For example:
+
 
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.

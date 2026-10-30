@@ -1,21 +1,28 @@
 /**
- * Title of Project
- * Author Name
+ * DOTS DOTS DOTS
+ * antonyhatem
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * second prototype is an interactive canvas of polka dots that change colors randomly after hovering cursor over them. makes for a satisfying sight of colors after coloring every dot.
  */
 
 "use strict";
-let circle;
+//stores circles
+let circles =[];
 /**
- making canvas
+ making canvas and circles
 */
 
 function setup() {
     createCanvas(500, 500);
+    
+// loops to place circles on canvas everywhere in straight fashion
+    for (let x = 25; x < 500; x += 50) {
+        for (let y = 25; y < 500; y += 50) {
 
-    circle = createCircle(250, 250);
+//creates circle and add it to an array 
+            circles.push(createCircle(x, y));
+        }
+    }
 }
 
 
@@ -24,13 +31,14 @@ function setup() {
 */
 function draw() {
     background(30);
-
+for (let circle of circles) {
     updateCircle(circle);
 
 
     fill(circle.colour);
     noStroke();
     ellipse(circle.x, circle.y, circle.size);
+    }
 }
 //creates and returns circle object
 function createCircle(x, y) {
@@ -42,8 +50,9 @@ function createCircle(x, y) {
         isHovered: false
     };
 }
-
+//goes thru circles
 function updateCircle(circle) {
+
     // chceks distance between cursor and circle
     let distance = dist(mouseX, mouseY, circle.x, circle.y);
 
