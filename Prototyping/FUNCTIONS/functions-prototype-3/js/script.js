@@ -7,36 +7,44 @@
  */
 
 "use strict";
-let circleX = 500;
-let circleY = 500;
-
-let originalX = 500;
-let originalY = 500;
-
-let circleSpeed = 0.04;
-
+let circle = {
+  x: 500,
+  y: 500,
+  originalX: 500,
+  originalY: 500,
+  size: 15,
+  speed: 0.04
+};
 
 function setup() {
   createCanvas(1000, 1000);
 }
 
-
 function draw() {
   background(15);
 
-  let distance = dist(mouseX, mouseY, circleX, circleY);
+  updateCircle(circle);
+  drawCircle(circle);
+}
 
-  // attracts the circle when the cursor is close
-  if (distance < 200) {
-    circleX = lerp(circleX, mouseX, circleSpeed);
-    circleY = lerp(circleY, mouseY, circleSpeed);
+
+// updates circle position
+function updateCircle(circle) {
+  let distance = dist(mouseX, mouseY, circle.x, circle.y);
+
+  if (distance < 300) {
+    circle.x = lerp(circle.x, mouseX, circle.speed);
+    circle.y = lerp(circle.y, mouseY, circle.speed);
   } else {
-
-    circleX = lerp(circleX, originalX, circleSpeed);
-    circleY = lerp(circleY, originalY, circleSpeed);
+    circle.x = lerp(circle.x, circle.originalX, circle.speed);
+    circle.y = lerp(circle.y, circle.originalY, circle.speed);
   }
+}
 
+
+// draws circle
+function drawCircle(circle) {
   fill(255);
   noStroke();
-  ellipse(circleX, circleY, 15);
-} 
+  ellipse(circle.x, circle.y, circle.size);
+}
