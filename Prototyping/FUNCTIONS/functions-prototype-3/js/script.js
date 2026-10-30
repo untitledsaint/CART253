@@ -7,18 +7,27 @@
  */
 
 "use strict";
-let circle;
+//stores circles
+let circles = [];
+let circleAmount = 300;
 
 function setup() {
   createCanvas(1000, 1000);
+
+  //should make circles in random spots everywhere in accordance with circleAmount
+  for (let i = 0; i < circleAmount; i++) {
+    circles.push(createCircle());
+  }
   circle = createCircle();
 }
 
 function draw() {
-  background(15);
+  background(200);
 
+  for (let circle of circles) {
   updateCircle(circle);
   drawCircle(circle);
+    }
 }
 
 
@@ -26,7 +35,7 @@ function draw() {
 function updateCircle(circle) {
   let distance = dist(mouseX, mouseY, circle.x, circle.y);
 
-  if (distance < 300) {
+  if (distance < 180) {
     circle.x = lerp(circle.x, mouseX, circle.speed);
     circle.y = lerp(circle.y, mouseY, circle.speed);
   } else {
@@ -38,11 +47,11 @@ function updateCircle(circle) {
 
 // draws circle
 function drawCircle(circle) {
-  fill(255);
+  fill(0);
   noStroke();
   ellipse(circle.x, circle.y, circle.size);
 }
-
+//makes circle object function
 function createCircle() {
     let x = random(20, 980);
     let y = random(20, 980);
