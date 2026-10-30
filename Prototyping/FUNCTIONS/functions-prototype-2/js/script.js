@@ -7,10 +7,7 @@
  */
 
 "use strict";
-let circleX = 250;
-let circleY = 250;
-let circleSize = 60;
-let circleColour;
+let circle;
 /**
  making canvas
 */
@@ -18,7 +15,7 @@ let circleColour;
 function setup() {
     createCanvas(500, 500);
 
-    circleColour = color(255);
+    circle = createCircle(250, 250);
 }
 
 
@@ -28,17 +25,27 @@ function setup() {
 function draw() {
     background(30);
 // chceks distance between cursor and circle
-    let distance = dist(mouseX, mouseY, circleX, circleY);
+    let distance = dist(mouseX, mouseY, circle.x, circle.y);
 //checks if mouse is inside circle bounds
-    let hovering = distance < circleSize / 2;
+    let hovering = distance < circle.size / 2;
 //changes color for circle after hovering over
-    if (hovering && !isHovered) {
-        circleColour = color(random(255), random(255), random(255));
+    if (hovering && !circle.isHovered) {
+        circle.colour = color(random(255), random(255), random(255));
     }
 // i think remembers if cursor is over a circle
     isHovered = hovering;
 
-    fill(circleColour);
+    fill(circle.colour);
     noStroke();
-    ellipse(circleX, CircleY, CircleSize);
+    ellipse(circle.x, Circle.y, Circle.size);
+}
+
+function createCircle(x, y) {
+    return {
+        x: x,
+        y: y,
+        size: 60,
+        colour: color(255),
+        isHovered: false
+    };
 }
