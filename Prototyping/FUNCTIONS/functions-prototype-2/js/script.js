@@ -25,20 +25,8 @@ function setup() {
 function draw() {
     background(30);
 
-// chceks distance between cursor and circle
-    let distance = dist(mouseX, mouseY, circle.x, circle.y);
+    updateCircle(circle);
 
-
-//checks if mouse is inside circle bounds
-    let hovering = distance < circle.size / 2;
-
-
-//changes color for circle after hovering over
-    if (hovering && !circle.isHovered) {
-        circle.colour = color(random(255), random(255), random(255));
-    }
-// i think remembers if cursor is over a circle
-    circle.isHovered = hovering;
 
     fill(circle.colour);
     noStroke();
@@ -53,4 +41,21 @@ function createCircle(x, y) {
         colour: color(255),
         isHovered: false
     };
+}
+
+function updateCircle(circle) {
+    // chceks distance between cursor and circle
+    let distance = dist(mouseX, mouseY, circle.x, circle.y);
+
+
+//checks if mouse is inside circle bounds
+    let hovering = distance < circle.size / 2;
+
+
+//changes color for circle after hovering over
+    if (hovering && !circle.isHovered) {
+        circle.colour = color(random(255), random(255), random(255));
+    }
+// i think remembers if cursor is over a circle
+    circle.isHovered = hovering;
 }
