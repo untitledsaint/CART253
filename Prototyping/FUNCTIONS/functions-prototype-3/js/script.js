@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * magnetite
+ * antonyhatem
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * third prototype is an interactive canvas that features circles which mimic that black iron sand called magnetite. you can gather the magnetite if you keep moving your cursor slowly, or if you decide to move it abruptly while collecting it, throw it back to where it was!
  */
 
 "use strict";
