@@ -33,6 +33,9 @@ third entry in the journal, the variables prototyping was actually not as hard a
 ![image](images/FUNCTIONS-PROT3:3.png)
 <sup><sub>screenshot of my functions prototype 3</sub></sup>
 
+## november 5 2026
+//
+
 
 
 
