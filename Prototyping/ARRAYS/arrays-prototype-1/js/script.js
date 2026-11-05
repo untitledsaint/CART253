@@ -12,7 +12,7 @@
 let circles = [];
 
 //amount of circle present
-let circleAmount = 40;
+let circleAmount = 100;
 
 /**
  * makes canvas
@@ -20,7 +20,8 @@ let circleAmount = 40;
 function setup() {
     createCanvas(1000, 1000);
 
-    //creates circles and puts them in array
+    //creates circles and puts them in array 
+    //this is also where all circle configurations are present.
     for (let i = 0; i < circleAmount; i++) {
         circles.push({
             angle: i * 0.15,
@@ -36,7 +37,7 @@ function setup() {
  * draws background, circle and updates of the circle
 */
 function draw() {
-    background(25);
+    background(20);
 
     for (let circle of circles) {
 
@@ -48,7 +49,7 @@ function draw() {
     
 
     //resets circle position if it goes too far from center position
-    if (circle.distance > 500){
+    if (circle.distance > 600){
         circle.distance = 0;
     }
     
@@ -56,8 +57,11 @@ function draw() {
     let x = 500 + cos(circle.angle) * circle.distance;
     let y = 500 + sin(circle.angle) * circle.distance;
 
+    //changes colour depending on distance of the circle
+    let colour = map(circle.distance, 0, 500, 50, 255);
+
     //draws circle
-    fill(255);
+    fill(colour, 100, 255);
     ellipse(x, y, circle.size);
 
 }
