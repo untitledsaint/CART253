@@ -89,6 +89,21 @@ welcome welcome, here you will find any prototypes, projects and experiments tha
 ![Image](images/FUNCTIONS-PROT3:3.png)
 ### [//prototype-3](https://untitledsaint.github.io/CART253/Prototyping/FUNCTIONS/functions-prototype-3/)
 [PROTOTYPE 3 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/FUNCTIONS/functions-prototype-3)
+
+# PROTOTYPING: ARRAYS
+## prototype 1
+![Image](images/ARRAYS-PROT2:3.png)
+### [//prototype-1](https://untitledsaint.github.io/CART253/Prototyping/ARRAYS/arrays-prototype-1/)
+[PROTOTYPE 1 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/ARRAYS/arrays-prototype-1)
+## prototype 2
+![Image](images/ARRAYS-PROT2:3.png)
+### [//prototype-2](https://untitledsaint.github.io/CART253/Prototyping/ARRAYS/arrays-prototype-2/)
+[PROTOTYPE 2 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/ARRAYS/arrays-prototype-2)
+## prototype 3
+![Image](images/ARRAYS-PROT3:3.png)
+### [//prototype-3](https://untitledsaint.github.io/CART253/Prototyping/ARRAYS/arrays-prototype-3/)
+[PROTOTYPE 3 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/ARRAYS/arrays-prototype-3)
+
 ### ✿ enjoy the stay ✿
 
 
