@@ -1,9 +1,8 @@
 /**
- * Title of Project
+ * Supernova
  * antonyhatem
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This prototype serves to act as trippy visuals using thousands of circles moving in a spiral-like motion to give the effect. Colors help the experience and make it look neat. Resembles an explosion somewhere in space.
  */
 
 "use strict";
@@ -12,23 +11,20 @@
 let circles = [];
 
 //amount of circle present
-let circleAmount = 100;
+let circleAmount = 2000;
 
 /**
  * makes canvas
 */
 function setup() {
     createCanvas(1000, 1000);
+    noStroke()
 
     //creates circles and puts them in array 
-    //this is also where all circle configurations are present.
+    
     for (let i = 0; i < circleAmount; i++) {
-        circles.push({
-            angle: i * 0.15,
-            distance: i * 10,
-            size: random(3, 10),
-            speed: random(0.5, 1,5)
-        });
+        circles.push(createCircle(i));
+  
     }
 }
 
@@ -39,21 +35,39 @@ function setup() {
 function draw() {
     background(20);
 
+        //updates and draws every circle
     for (let circle of circles) {
-
-
-        //makes it so that circle turns and moves farther from middle
-        circle.angle += 0.03;
-        circle.distance += 1;
-    
-    
-
-    //resets circle position if it goes too far from center position
-    if (circle.distance > 600){
-        circle.distance = 0;
+        updateCircle(circle);
+        drawCircle(circle);
     }
     
-    // angle and distance to track circle position
+}
+//creates circle variables for each
+//also where to change desired behaviors 
+//to make the spirals tighter together or circles bigger, faster
+function createCircle(i) {
+    return {
+        angle: i * 0.15,
+        distance: i * 3,
+        size: random(5, 10),
+        speed: random(0.5, 3)
+    };
+}
+        //makes it so that circle turns and moves farther from middle
+        //CHANGE IF YOU WANT FASTER SPIRAL
+    function updateCircle(circle) {
+        circle.angle += 0.01;
+        circle.distance += circle.speed;
+
+        //resets circle position if it goes too far from center position
+    if (circle.distance > 600) {
+        circle.distance = 0;
+    }
+}
+    
+    
+    // angle and distance to track circle position + draws circle
+    function drawCircle(circle) {
     let x = 500 + cos(circle.angle) * circle.distance;
     let y = 500 + sin(circle.angle) * circle.distance;
 
@@ -66,4 +80,4 @@ function draw() {
 
 }
 
-}
+
