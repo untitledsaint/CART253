@@ -24,7 +24,9 @@ function setup() {
     for (let i = 0; i < circleAmount; i++) {
         circles.push({
             angle: i * 0.15,
-            distance: i * 10
+            distance: i * 10,
+            size: random(3, 10),
+            speed: random(0.5, 1,5)
         });
     }
 }
@@ -56,7 +58,7 @@ function draw() {
 
     //draws circle
     fill(255);
-    ellipse(x, y, 10);
+    ellipse(x, y, circle.size);
 
 }
 
