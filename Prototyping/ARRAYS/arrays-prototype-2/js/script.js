@@ -58,4 +58,17 @@ function draw() {
  --------------------------------------------------------------------------------------------------
 */
 
+//draws textbox
+colorMode(RGB);
+fill(0, 180);
+stroke(255);
+strokeWeight(3);
+rectMode(CENTER);
+rect(500, 500, 700, 200);
+
+
+
+
+
+
     }
