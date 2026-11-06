@@ -34,7 +34,9 @@ third entry in the journal, the variables prototyping was actually not as hard a
 <sup><sub>screenshot of my functions prototype 3</sub></sup>
 
 ## november 5 2026
-//
+// seventh entry in the journal. this week was about arrays. arrays were really nice to work with and give really satisfying results. i didnt have issues using them, for the most part, and now they're basically part of all my projects now and probably onwards. Whats difficult is once again just keeping track of multiples elements and make sure nothing is forgotten. The way i work is in a progressive way so i start off small and then obviously there are more and more things to consider and add, so towards the end it gets to a point where you have to change all the variables each time. anyway its great to be able to use arrays it genuinely helps alot on making crazy new things. Still no usage of images and sounds but that might chance.
+![image](images/ARRAYS-PROT2:3.png)
+<sup><sub>screenshot of my arrays prototype 2</sub></sup>
 
 
 

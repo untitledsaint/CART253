@@ -92,7 +92,7 @@ welcome welcome, here you will find any prototypes, projects and experiments tha
 
 # PROTOTYPING: ARRAYS
 ## prototype 1
-![Image](images/ARRAYS-PROT2:3.png)
+![Image](images/ARRAYS-PROT1:3.png)
 ### [//prototype-1](https://untitledsaint.github.io/CART253/Prototyping/ARRAYS/arrays-prototype-1/)
 [PROTOTYPE 1 CODE](https://github.com/untitledsaint/CART253/tree/main/Prototyping/ARRAYS/arrays-prototype-1)
 ## prototype 2
