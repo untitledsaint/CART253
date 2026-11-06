@@ -78,11 +78,20 @@ noStroke();
 fill(255);
 textSize(28);
 textAlign(CENTER, CENTER);
-text(dialogues[currentDialogue], 500, 500)
+text(dialogues[currentDialogue], 500, 500);
 
+}
+//advances dialogue after clicking
+function mousePressed() {
+    currentDialogue++;
 
-
-
-
-
+    //when dialogue is exhausted, it returns to the first one of the array.
+    if (currentDialogue >= dialogues.length) {
+        currentDialogue = 0;
     }
+}
+
+
+
+
+    
