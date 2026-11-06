@@ -2,13 +2,14 @@
  * Ripple Ripple Ripple
  * antonyhatem
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * third prototype is straightfoward, water ripples! whereever you click on your screen, a ripple will appear.
  */
 
 "use strict";
+//stores ripples in array
+let ripples = [];
 
-let ripple = 0;
+
 /**
  * makes canvas
 */
@@ -22,15 +23,26 @@ function setup() {
 */
 function draw() {
     background(0);
-
-    ripple += 3;
-
+// updates, draws ripples from array
+    for (let ripple of ripples) {
+//what makes the ripple expand
+    ripple.size += 3;
+// draws the circle (ripple in this case)
     noFill();
     stroke(150, 200, 255);
     strokeWeight(3);
-    ellipse(500, 500, ripple);
+    ellipse(ripple.x, ripple.y, ripple.size);
 }
+    }
 
+    
+// when you click is resets the ripple
 function mousePressed() {
-    ripple = 0;
+    let ripple = {
+        x: mouseX,
+        y: mouseY,
+        size: 0
+    };
+    //pushes ripples from array after a click
+    ripples.push(ripple);
 }
