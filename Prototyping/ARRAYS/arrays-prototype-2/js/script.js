@@ -1,21 +1,24 @@
 /**
- * Title of Project
+ * would you kindly?
  * antonyhatem
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Made a dialogue box containing documented CIA MKUltra hypnosis sentences and trippy visuals to put you in the mood. Each time you advance the dialogue, the colours change too.
  */
 
 "use strict";
 
 //array to store all dialogues
 let dialogues = [
-    "hello",
-    "hi",
-    "hey"
+    "Your mind is completely relaxed, and you can only hear the sound of my voice.",
+    "You feel a deep sense of guilt for your past actions, and the only way to relieve it is to cooperate fully.",
+    "Every word i say becomes your own thoughts; you will obey because it is your own will.",
+    "You have no choice but to rely on me, your old life is gone, and no one is coming to look for you.",
+    "You will forget everything that happened earlier until I give you the signal. Would you kindly?"
 ];
 //tracks the current dialogue displayed
 let currentDialogue = 0;
+
+let backgroundColours = [250, 180, 50, 320, 120];
 /**
  * makes canvas
 */
@@ -54,9 +57,17 @@ function draw() {
                 colorMode(HSB);
                 //changes saturation depending on position, in this case i made it the same color across
                 const saturation = map(x, 0, width, 70, 200);
-                fill(250, saturation, 100);
+
+                //changes background colour based on the dialogue.
+                fill(backgroundColours[currentDialogue], saturation, 100);
+
+                
                 //very thin and stretched circle, which is basically the lines you see
+            
                 ellipse(10, 30, 0.6, 333);
+
+                
+
                 pop();
         }
     }   
@@ -76,7 +87,7 @@ rect(500, 500, 700, 200);
 
 noStroke();
 fill(255);
-textSize(28);
+textSize(15);
 textAlign(CENTER, CENTER);
 text(dialogues[currentDialogue], 500, 500);
 
