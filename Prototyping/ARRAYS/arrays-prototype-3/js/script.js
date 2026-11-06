@@ -22,7 +22,7 @@ function setup() {
  * draws everything
 */
 function draw() {
-    background(0);
+    background(50, 100, 200);
 // updates, draws ripples from array
     for (let ripple of ripples) {
 //what makes the ripple expand
