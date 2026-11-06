@@ -8,6 +8,14 @@
 
 "use strict";
 
+//array to store all dialogues
+let dialogues = [
+    "hello",
+    "hi",
+    "hey"
+];
+//tracks the current dialogue displayed
+let currentDialogue = 0;
 /**
  * makes canvas
 */
@@ -65,6 +73,12 @@ stroke(255);
 strokeWeight(3);
 rectMode(CENTER);
 rect(500, 500, 700, 200);
+
+noStroke();
+fill(255);
+textSize(28);
+textAlign(CENTER, CENTER);
+text(dialogues[currentDialogue], 500, 500)
 
 
 
