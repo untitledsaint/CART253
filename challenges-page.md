@@ -1,9 +1,21 @@
- [instructions challenge](https://untitledsaint.github.io/CART253/challenges/instructions-challenge/)
- [variables challenge](https://untitledsaint.github.io/CART253/challenges/variables-challenge/)
- [conditionals challenge](https://untitledsaint.github.io/CART253/challenges/conditionals-challenge/)
- [events challenge](https://untitledsaint.github.io/CART253/challenges/events-challenge/)
- [functions challenge](https://untitledsaint.github.io/CART253/challenges/instructions-challenge/)
- arrays challenge](https://untitledsaint.github.io/CART253/challenges/arrays-challenge/)
+![Banner](images/CHALLENGES.png)
 
-------
+
+ [instructions challenge](https://untitledsaint.github.io/CART253/challenges/instructions-challenge/)
+
+ [variables challenge](https://untitledsaint.github.io/CART253/challenges/variables-challenge/)
+
+ [conditionals challenge](https://untitledsaint.github.io/CART253/challenges/conditionals-challenge/)
+
+ [events challenge](https://untitledsaint.github.io/CART253/challenges/events-challenge/)
+
+ [functions challenge](https://untitledsaint.github.io/CART253/challenges/instructions-challenge/)
+
+ [arrays challenge](https://untitledsaint.github.io/CART253/challenges/arrays-challenge/)
+
+ [loops challenge](https://untitledsaint.github.io/CART253/challenges/loops-challenge/)
+
+ 
+
+-------
 [back](README.md)
