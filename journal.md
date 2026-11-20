@@ -40,6 +40,15 @@ third entry in the journal, the variables prototyping was actually not as hard a
 
 
 
+# FINAL PROJECT REFLECTION
+
+## november 19 2026 REFLECTIVE JOURNAL 1
+// This entry about the final project will talk about possible concepts and ideas. Up until writing this on November 19th I was deathly ill and couldn't work on any of my classes. Pretty much a whole week wasted. I however did give it some thought and came up with a handful of ideas I might tackle.
+ One of the ideas was maybe some kind of clicker game not too dissimilar from Cookie Clicker or this game called Horripilant on steam which are essentially incremental clicking idle games. I find the game loop interesting and could make for a nice project. Another idea could be a continuation of my second arrays prototype about the MKUltra dialogue and visuals and I heavily expand on it with multiple stages and different trippy backgrounds. Last but not least, maybe the usage of 3d and a way to interact with it in engaging ways? 
+ Im more interested with a big expansion of my prototype or the clicker game honestly. Im trying to figure out to what extend I'll be able to make a clicker game function and be interesting without cutting too many features. These games have a surprising amount of depth so I need to be realistic about what I'm making.
+ In class, I was mostly researching for more ideas and ways on how to "change stages", for example you press or complete an action which will change the whole canvas draw display. Also was working on potential GIFS/Images to include within the project.
+ I will be sure to give it some more thought and it everything will materialize more by next week if things go well.
+
 
 
 
